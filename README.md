@@ -14,6 +14,7 @@ pnpm i
 ## build ui-lib
 
 pnpm build:ui
+
 ## start application
 
 pnpm start:app
@@ -28,6 +29,6 @@ pnpm add ui-lib --filter vite-react --workspace
 
 pnpm run --parallel -r build (run on all repos)
 
-pnpm add nx -D -w 
+pnpm add nx -D -w
 
 npx nx build shared-ui
