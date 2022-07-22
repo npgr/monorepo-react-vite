@@ -8,16 +8,18 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "sb": "start-storybook -p 6006",
+    "build:sb": "build-storybook"
   },
   "dependencies": {
+    "@toptal/picasso": "^26.6.0",
+    "@toptal/picasso-provider": "^1.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@rollup/pluginutils": "^4.2.1",
     "@babel/core": "^7.18.9",
+    "@rollup/pluginutils": "^4.2.1",
     "@storybook/addon-actions": "^6.5.9",
     "@storybook/addon-essentials": "^6.5.9",
     "@storybook/addon-interactions": "^6.5.9",
