@@ -1,29 +1,44 @@
-# Stack
+## Stack
 
 - pnpm monorepo
 - React 18
 - typescript
 - vite (react-ts template)
+- storybook
 
 Conventional commits
 
-## Install dependencies first time
+### Install dependencies first time:
 
+```bash
 pnpm i
+```
 
-## build ui-lib
+### Build ui-lib:
 
+```bash
 pnpm build:ui
+```
 
-## start application
+### Start application:
 
+```bash
 pnpm start:app
+```
 
-## Create app with vite
+### Run storybook in ui-lib:
 
+```bash
+pnpm sb:ui
+```
+
+### Create app with vite:
+
+```bash
 pnpm create vite
+```
 
-## add workspace package to app
+### Some util commands (ommit Nx):
 
 pnpm add ui-lib --filter vite-react --workspace
 
