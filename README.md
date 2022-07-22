@@ -1,14 +1,19 @@
 ## Stack
 
-- pnpm monorepo
+- pnpm (workspace - monorepo)
 - React 18
 - typescript
-- vite (react-ts template)
+- vite
 - storybook
+- @toptal/picasso (ui lib)
 
 Conventional commits
 
 ### Install dependencies first time:
+
+```bash
+pnpm config set auto-install-peers true
+```
 
 ```bash
 pnpm i
