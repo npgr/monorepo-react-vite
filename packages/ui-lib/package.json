@@ -11,6 +11,8 @@
     "sb": "yarn test:json && start-storybook -p 6006",
     "build:sb": "build-storybook",
     "test": "vitest",
+    "vi:ui": "vitest --ui",
+    "coverage": "vitest --coverage",
     "test:json": "vitest --watch=false --reporter=json --outputFile=./src/unit-tests/unit-test-results.json || true",
     "test:sb": "test-storybook"
   },
@@ -48,6 +50,7 @@
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
     "@vitejs/plugin-react": "^2.0.0",
+    "@vitest/ui": "^0.19.1",
     "babel-loader": "^8.2.5",
     "jsdom": "^20.0.0",
     "storybook_vitest_addon": "^0.0.8",
