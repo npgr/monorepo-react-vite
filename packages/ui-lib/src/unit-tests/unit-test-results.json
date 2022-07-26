@@ -1,0 +1,70 @@
+{
+  "numTotalTestSuites": 4,
+  "numPassedTestSuites": 4,
+  "numFailedTestSuites": 0,
+  "numPendingTestSuites": 0,
+  "numTotalTests": 4,
+  "numPassedTests": 4,
+  "numFailedTests": 0,
+  "numPendingTests": 0,
+  "numTodoTests": 1,
+  "startTime": 1658855198662,
+  "success": true,
+  "testResults": [
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+            "Given Button component",
+            "When render button"
+          ],
+          "fullName": " Given Button component When render button Should show button content",
+          "status": "passed",
+          "title": "Should show button content",
+          "duration": 94,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "Given Button component",
+            "When click on button"
+          ],
+          "fullName": " Given Button component When click on button Should call onClick handle",
+          "status": "passed",
+          "title": "Should call onClick handle",
+          "duration": 29,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "Given Button component",
+            "When click on button"
+          ],
+          "fullName": " Given Button component When click on button todo test",
+          "status": "todo",
+          "title": "todo test",
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "Given Button component",
+            "When click on button"
+          ],
+          "fullName": " Given Button component When click on button skip test",
+          "status": "skipped",
+          "title": "skip test",
+          "failureMessages": []
+        }
+      ],
+      "startTime": 1658855207307,
+      "endTime": 1658855207430,
+      "status": "failed",
+      "message": "",
+      "name": "/home/ngoncalves/projects/practice/packages/ui-lib/src/Button/Button.test.tsx"
+    }
+  ]
+}

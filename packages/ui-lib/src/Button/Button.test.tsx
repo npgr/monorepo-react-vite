@@ -30,5 +30,6 @@ describe('Given Button component', () => {
 
       expect(mockOnClick).toBeCalledTimes(1);
     });
+    it.todo('todo test'), it.skip('skip test');
   });
 });

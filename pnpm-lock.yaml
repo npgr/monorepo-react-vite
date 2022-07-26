@@ -92,6 +92,7 @@ importers:
       jsdom: ^20.0.0
       react: ^18.2.0
       react-dom: ^18.2.0
+      storybook_vitest_addon: ^0.0.8
       vite: ^3.0.0
       vite-plugin-dts: ^1.4.0
       vitest: ^0.19.1
@@ -130,6 +131,7 @@ importers:
       '@vitejs/plugin-react': 2.0.0_vite@3.0.2
       babel-loader: 8.2.5_sqoqrlbh4fciq6urcohea2fb5a
       jsdom: 20.0.0
+      storybook_vitest_addon: 0.0.8_6vqgfkoe5vkrgyazhm73i2sohq
       vite: 3.0.2
       vite-plugin-dts: 1.4.0_vite@3.0.2
       vitest: 0.19.1_jsdom@20.0.0
@@ -13958,6 +13960,31 @@ packages:
 
   /store2/2.14.2:
     resolution: {integrity: sha512-siT1RiqlfQnGqgT/YzXVUNsom9S0H1OX+dpdGN1xkyYATo4I6sep5NmsRD/40s3IIOvlCq6akxkqG82urIZW1w==}
+    dev: true
+
+  /storybook_vitest_addon/0.0.8_6vqgfkoe5vkrgyazhm73i2sohq:
+    resolution: {integrity: sha512-JHKO+BFxWL9P5w9nMM5lGkCx2Orf14qvhBKbjcfb/Eu984nPhnW6J7xEO8A7kfYhKUUl0SpsnThV0qqJFXotdw==}
+    peerDependencies:
+      '@storybook/addons': ^6.4.0
+      '@storybook/api': ^6.4.0
+      '@storybook/components': ^6.4.0
+      '@storybook/core-events': ^6.4.0
+      '@storybook/theming': ^6.4.0
+      react: ^16.8.0 || ^17.0.0
+      react-dom: ^16.8.0 || ^17.0.0
+    peerDependenciesMeta:
+      react:
+        optional: true
+      react-dom:
+        optional: true
+    dependencies:
+      '@storybook/addons': 6.5.9_biqbaboplfbrettd7655fr4n2y
+      '@storybook/api': 6.5.9_biqbaboplfbrettd7655fr4n2y
+      '@storybook/components': 6.5.9_biqbaboplfbrettd7655fr4n2y
+      '@storybook/core-events': 6.5.9
+      '@storybook/theming': 6.5.9_biqbaboplfbrettd7655fr4n2y
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
     dev: true
 
   /stream-browserify/2.0.2:

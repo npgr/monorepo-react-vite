@@ -4,6 +4,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { within, userEvent } from '@storybook/testing-library';
 import { expect } from '@storybook/jest';
 import { Button } from './Button';
+import results from '../unit-tests/unit-test-results.json';
 
 // const PicassoProvider: DecoratorFn = (StoryFn) => {
 //   return (
@@ -18,6 +19,10 @@ export default {
   component: Button,
   parameters: {
     layout: 'padded', // 'centered', 'fullscreen',  (default)
+    vitest: {
+      testFile: 'Button.test.tsx',
+      testResults: results,
+    },
   },
   // args: {
   //   onClick: () => console.log('jellow'),
