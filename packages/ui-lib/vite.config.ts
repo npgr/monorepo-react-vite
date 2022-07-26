@@ -41,7 +41,7 @@ export default defineConfig({
     // since parsing CSS is slow
     css: false,
     coverage: {
-      reporter: ['text', 'json', 'html'],
+      reporter: ['html'],
     },
   },
 });
