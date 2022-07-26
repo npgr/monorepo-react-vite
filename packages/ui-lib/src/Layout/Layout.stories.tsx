@@ -7,7 +7,7 @@ export default {
   parameters: {
     layout: 'fullscreen',
   },
-} as ComponentMeta<typeof Layout>; // TODO (ts) as ComponentMeta<typeof Layout>;
+} as ComponentMeta<typeof Layout>;
 
 const Template: ComponentStory<typeof Layout> = (args) => <Layout {...args} />;
 

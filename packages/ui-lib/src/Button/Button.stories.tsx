@@ -1,6 +1,8 @@
 // import Picasso from '@toptal/picasso-provider';
 // import { DecoratorFn } from '@storybook/react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { within, userEvent } from '@storybook/testing-library';
+import { expect } from '@storybook/jest';
 import { Button } from './Button';
 
 // const PicassoProvider: DecoratorFn = (StoryFn) => {
@@ -43,4 +45,10 @@ Names.argTypes = {
     control: 'inline-radio',
     options: ['Name 1', 'Name 2', 'Name 3'],
   },
+};
+
+Basic.play = async ({ canvasElement }) => {
+  const canvas = within(canvasElement);
+  const Button = await canvas.getByRole('button', { name: /Basico/i });
+  await expect(Button).toBeInTheDocument();
 };
