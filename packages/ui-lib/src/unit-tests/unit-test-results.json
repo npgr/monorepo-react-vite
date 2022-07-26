@@ -8,7 +8,7 @@
   "numFailedTests": 0,
   "numPendingTests": 0,
   "numTodoTests": 1,
-  "startTime": 1658855198662,
+  "startTime": 1658857475600,
   "success": true,
   "testResults": [
     {
@@ -22,7 +22,7 @@
           "fullName": " Given Button component When render button Should show button content",
           "status": "passed",
           "title": "Should show button content",
-          "duration": 94,
+          "duration": 88,
           "failureMessages": []
         },
         {
@@ -34,7 +34,7 @@
           "fullName": " Given Button component When click on button Should call onClick handle",
           "status": "passed",
           "title": "Should call onClick handle",
-          "duration": 29,
+          "duration": 30,
           "failureMessages": []
         },
         {
@@ -60,8 +60,8 @@
           "failureMessages": []
         }
       ],
-      "startTime": 1658855207307,
-      "endTime": 1658855207430,
+      "startTime": 1658857483738,
+      "endTime": 1658857483856,
       "status": "failed",
       "message": "",
       "name": "/home/ngoncalves/projects/practice/packages/ui-lib/src/Button/Button.test.tsx"
