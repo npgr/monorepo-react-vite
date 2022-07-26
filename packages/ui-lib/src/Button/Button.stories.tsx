@@ -49,6 +49,6 @@ Names.argTypes = {
 
 Basic.play = async ({ canvasElement }) => {
   const canvas = within(canvasElement);
-  const Button = await canvas.getByRole('button', { name: /Basico/i });
+  const Button = await canvas.getByRole('button', { name: /Basic/i });
   await expect(Button).toBeInTheDocument();
 };
