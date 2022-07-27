@@ -5,6 +5,8 @@ module.exports = {
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
     'storybook_vitest_addon',
+    '@storybook/addon-postcss',
+    '@storybook/node-logger',
   ],
   framework: '@storybook/react',
   core: {

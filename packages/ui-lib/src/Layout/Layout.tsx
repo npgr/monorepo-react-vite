@@ -1,5 +1,6 @@
 import { Page } from '@toptal/picasso';
 import { Globe16, Profile16, PortfolioDesigner16 } from '@toptal/picasso/Icon';
+import '../index.css';
 
 interface LayoutProps {
   title: string;
@@ -21,13 +22,15 @@ const SidebarMenu = () => (
 
 export const Layout = ({ title, rightContent = '', sideMenu = '', children }: LayoutProps) => {
   return (
-    <Page width="wide">
-      <Page.TopBar rightContent={rightContent} title={title} />
-      <Page.Content>
-        <SidebarMenu />
-        <Page.Article>{children}</Page.Article>
-      </Page.Content>
-      {/* <Page.Footer /> */}
-    </Page>
+    <div className="h-screen">
+      <Page width="full">
+        <Page.TopBar rightContent={rightContent} title={title} />
+        <Page.Content>
+          <SidebarMenu />
+          <Page.Article>{children}</Page.Article>
+        </Page.Content>
+        {/* <Page.Footer /> */}
+      </Page>
+    </div>
   );
 };
