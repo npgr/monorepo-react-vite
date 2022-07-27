@@ -1,5 +1,15 @@
+import Picasso from '@toptal/picasso-provider';
+import { DecoratorFn } from '@storybook/react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { Layout } from './Layout';
+
+const PicassoProvider: DecoratorFn = (StoryFn) => {
+  return (
+    <Picasso responsive={false} loadFavicon={false} fixViewport={false}>
+      <StoryFn />
+    </Picasso>
+  );
+};
 
 export default {
   title: 'UI/Layout',
@@ -7,6 +17,7 @@ export default {
   parameters: {
     layout: 'fullscreen',
   },
+  decorators: [PicassoProvider],
 } as ComponentMeta<typeof Layout>;
 
 const Template: ComponentStory<typeof Layout> = (args) => <Layout {...args} />;

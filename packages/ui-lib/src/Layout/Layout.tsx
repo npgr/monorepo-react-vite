@@ -1,4 +1,5 @@
 import { Page } from '@toptal/picasso';
+import { Globe16, Profile16, PortfolioDesigner16 } from '@toptal/picasso/Icon';
 
 interface LayoutProps {
   title: string;
@@ -8,12 +9,22 @@ interface LayoutProps {
   // TODO: Footer: React.ReactNode;
 }
 
+const SidebarMenu = () => (
+  <Page.Sidebar>
+    <Page.Sidebar.Menu>
+      <Page.Sidebar.Item icon={<PortfolioDesigner16 />}>Home</Page.Sidebar.Item>
+      <Page.Sidebar.Item icon={<Profile16 />}>Contacts</Page.Sidebar.Item>
+      <Page.Sidebar.Item icon={<Globe16 />}>Team</Page.Sidebar.Item>
+    </Page.Sidebar.Menu>
+  </Page.Sidebar>
+);
+
 export const Layout = ({ title, rightContent = '', sideMenu = '', children }: LayoutProps) => {
   return (
-    <Page>
+    <Page width="wide">
       <Page.TopBar rightContent={rightContent} title={title} />
       <Page.Content>
-        {sideMenu}
+        <SidebarMenu />
         <Page.Article>{children}</Page.Article>
       </Page.Content>
       {/* <Page.Footer /> */}
