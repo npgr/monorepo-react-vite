@@ -60,7 +60,7 @@ importers:
   packages/ui-lib:
     specifiers:
       '@babel/core': ^7.18.9
-      '@mdx-js/react': '1'
+      '@mdx-js/react': ^1.6.22
       '@rollup/pluginutils': ^4.2.1
       '@storybook/addon-actions': ^6.5.9
       '@storybook/addon-backgrounds': ^6.5.9
