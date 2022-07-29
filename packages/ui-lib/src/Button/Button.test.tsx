@@ -12,6 +12,7 @@ describe('Given Button component', () => {
         </Picasso>
       );
 
+      // @ts-expect-error - toBeInTheDocument Error on build, but not in test or storybook
       expect(screen.getByRole('button', { name: 'My Button' })).toBeInTheDocument();
     });
   });

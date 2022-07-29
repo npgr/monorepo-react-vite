@@ -6,6 +6,9 @@
 - vite
 - storybook
 - @toptal/picasso (ui lib)
+- tailwind
+
+https://github.com/vitest-dev/vitest/blob/main/examples/react-storybook/
 
 Conventional commits
 

@@ -8,7 +8,7 @@
   "numFailedTests": 0,
   "numPendingTests": 0,
   "numTodoTests": 1,
-  "startTime": 1658857475600,
+  "startTime": 1659138553356,
   "success": true,
   "testResults": [
     {
@@ -22,7 +22,7 @@
           "fullName": " Given Button component When render button Should show button content",
           "status": "passed",
           "title": "Should show button content",
-          "duration": 88,
+          "duration": 71,
           "failureMessages": []
         },
         {
@@ -34,7 +34,7 @@
           "fullName": " Given Button component When click on button Should call onClick handle",
           "status": "passed",
           "title": "Should call onClick handle",
-          "duration": 30,
+          "duration": 23,
           "failureMessages": []
         },
         {
@@ -60,11 +60,11 @@
           "failureMessages": []
         }
       ],
-      "startTime": 1658857483738,
-      "endTime": 1658857483856,
+      "startTime": 1659138559680,
+      "endTime": 1659138559774,
       "status": "failed",
       "message": "",
-      "name": "/home/ngoncalves/projects/practice/packages/ui-lib/src/Button/Button.test.tsx"
+      "name": "/Users/nunogoncalves/Documents/projects/monorepo-react-vite/packages/ui-lib/src/Button/Button.test.tsx"
     }
   ]
 }

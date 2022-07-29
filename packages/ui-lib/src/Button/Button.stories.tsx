@@ -55,5 +55,6 @@ Names.argTypes = {
 Basic.play = async ({ canvasElement }) => {
   const canvas = within(canvasElement);
   const Button = await canvas.getByRole('button', { name: /Basic/i });
+  // @ts-expect-error - Error toBeInTheDocument on build, but not in test or storybook
   await expect(Button).toBeInTheDocument();
 };

@@ -2,10 +2,13 @@
 
 - pnpm (workspace - monorepo)
 - React 18
-- typescript
-- vite
-- storybook
+- Typescript
+- Vite
+- Storybook
 - @toptal/picasso (ui lib)
+- Tailwind CSS
+
+https://github.com/vitest-dev/vitest/blob/main/examples/react-storybook/
 
 Conventional commits
 
