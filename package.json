@@ -8,6 +8,7 @@
     "start:app": "pnpm --filter vite-react dev --host",
     "build:ui": "pnpm --filter ui-lib build",
     "sb:ui": "pnpm --filter ui-lib sb",
+    "test:ui": "pnpm --filter ui-lib test",
     "lint": "pnpm eslint",
     "prettier": "prettier --write .",
     "test": "echo \"Error: no test specified\" && exit 1"

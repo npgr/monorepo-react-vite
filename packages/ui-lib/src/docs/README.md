@@ -34,6 +34,12 @@ pnpm build:ui
 pnpm start:app
 ```
 
+### Run tests in ui-lib:
+
+```bash
+pnpm test:ui
+```
+
 ### Run storybook in ui-lib:
 
 ```bash
