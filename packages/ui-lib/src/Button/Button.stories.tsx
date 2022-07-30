@@ -31,9 +31,7 @@ export default {
 } as ComponentMeta<typeof Button>;
 
 const Template: ComponentStory<typeof Button> = (args) => (
-  // <Picasso> -> decorators -> preview.js
   <Button {...args} />
-  // </Picasso>
 );
 
 export const Basic = Template.bind({});
