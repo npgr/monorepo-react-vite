@@ -5,6 +5,7 @@ import * as globalStorybookConfig from '../.storybook/preview';
 
 setGlobalConfig(globalStorybookConfig);
 
+// TODO: Check if necessary
 // Ensure MSW connections are closed
 ///ts-expect-error https://github.com/mswjs/msw-storybook-addon/issues/65
 // afterAll(() => getWorker().close())

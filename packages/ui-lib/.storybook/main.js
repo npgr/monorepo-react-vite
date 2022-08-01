@@ -16,6 +16,7 @@ module.exports = {
     storyStoreV7: true,
     interactionsDebugger: true,
   },
+  // TODO: Check if necessary
   // async viteFinal(config) {
   //   config.optimizeDeps = {
   //     ...(config.optimizeDeps || {}),
