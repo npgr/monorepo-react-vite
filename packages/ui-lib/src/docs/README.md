@@ -4,7 +4,10 @@
 - React 18
 - Typescript
 - Vite
+- Vitest
 - Storybook
+- MSW
+- Cypress
 - @toptal/picasso (ui lib)
 - Tailwind CSS
 

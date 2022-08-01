@@ -2,9 +2,12 @@
 
 - pnpm (workspace - monorepo)
 - React 18
-- typescript
-- vite
-- storybook
+- Typescript
+- Vite
+- Vitest
+- Storybook
+- MSW
+- Cypress
 - @toptal/picasso (ui lib)
 - tailwind
 
