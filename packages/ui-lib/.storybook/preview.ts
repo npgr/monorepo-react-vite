@@ -1,4 +1,7 @@
 import { globaldecorators } from './decorators';
+import { initialize, mswDecorator } from 'msw-storybook-addon';
+
+initialize();
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
@@ -11,4 +14,4 @@ export const parameters = {
   },
 };
 
-export const decorators = globaldecorators;
+export const decorators = [...globaldecorators, mswDecorator];

@@ -30,9 +30,7 @@ export default {
   // decorators: [PicassoProvider],
 } as ComponentMeta<typeof Button>;
 
-const Template: ComponentStory<typeof Button> = (args) => (
-  <Button {...args} />
-);
+const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 
 export const Basic = Template.bind({});
 Basic.args = {
