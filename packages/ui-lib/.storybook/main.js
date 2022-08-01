@@ -16,4 +16,12 @@ module.exports = {
     storyStoreV7: true,
     interactionsDebugger: true,
   },
+  // TODO: Check if necessary
+  // async viteFinal(config) {
+  //   config.optimizeDeps = {
+  //     ...(config.optimizeDeps || {}),
+  //     include: [...(config?.optimizeDeps?.include || []), 'msw-storybook-addon'],
+  //   };
+  //   return config;
+  // },
 };
