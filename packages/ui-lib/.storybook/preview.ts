@@ -1,5 +1,7 @@
 import { globaldecorators } from './decorators';
-import { initialize, mswDecorator } from 'msw-storybook-addon';
+import { mswDecorator, initialize } from 'msw-storybook-addon';
+// TODO: check if this is necessary
+// import { initializeMSW } from './msw-initialize';
 
 initialize();
 
@@ -14,4 +16,4 @@ export const parameters = {
   },
 };
 
-export const decorators = [...globaldecorators, mswDecorator];
+export const decorators = [mswDecorator, ...globaldecorators];

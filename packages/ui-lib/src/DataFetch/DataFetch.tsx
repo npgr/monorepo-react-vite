@@ -1,12 +1,16 @@
 import { useEffect, useState } from 'react';
 
-const DataFetch = () => {
+export const DataFetch = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
     // @ts-ignore
-    fetch('http://localhost:2020/api/users/20202').then((res) => setData(res.data));
+    fetch('http://localhost:2020/api/users/20202')
+      .then((res) => res.json())
+      .then((data) => setData(data));
   }, []);
-  return <div>{JSON.stringify(data)}</div>;
+  return (
+    <>
+      <div>{JSON.stringify(data, null, 2)}</div>
+    </>
+  );
 };
-
-export default DataFetch;

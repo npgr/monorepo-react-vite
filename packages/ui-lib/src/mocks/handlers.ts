@@ -1,14 +1,3 @@
-import { rest } from 'msw';
+import { userHandlers } from './responses';
 
-export const handlers = [
-  rest.get('http://localhost:2020/api/users/:userId', (req, res, ctx) => {
-    const { userId } = req.params;
-    return res(
-      ctx.json({
-        id: userId,
-        firstName: 'John',
-        lastName: 'Maverick',
-      })
-    );
-  }),
-];
+export const handlers = [...userHandlers];
