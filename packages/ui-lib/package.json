@@ -16,7 +16,8 @@
     "vi:ui": "vitest --ui",
     "coverage": "vitest --coverage",
     "test:json": "vitest --watch=false --reporter=json --outputFile=./src/unit-tests/unit-test-results.json || true",
-    "test:sb": "test-storybook"
+    "test:sb": "test-storybook",
+    "cypress:open": "yarn cypress open"
   },
   "dependencies": {
     "@toptal/picasso": "^26.6.0",
@@ -60,6 +61,7 @@
     "@vitest/ui": "^0.19.1",
     "autoprefixer": "^10.4.7",
     "babel-loader": "^8.2.5",
+    "cypress": "^10.4.0",
     "jest": "^28.1.3",
     "jsdom": "^20.0.0",
     "msw": "^0.44.2",
