@@ -17,7 +17,8 @@
     "coverage": "vitest --coverage",
     "test:json": "vitest --watch=false --reporter=json --outputFile=./src/unit-tests/unit-test-results.json || true",
     "test:sb": "test-storybook",
-    "cypress:open": "yarn cypress open"
+    "cypress:open": "yarn cypress open",
+    "cypress:run": "yarn cypress run --component"
   },
   "dependencies": {
     "@toptal/picasso": "^26.6.0",
