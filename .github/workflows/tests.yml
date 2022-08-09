@@ -28,8 +28,7 @@ jobs:
 
       # - name: 🛠 Config pnpm
       - name: 📥 Install dependencies
-        run: pnpm config set auto-install-peers true
-        run: pnpm install
+        run: pnpm config set auto-install-peers true && pnpm install
 
       - name: 🐙 Run test:ui (Vitest)
         run: pnpm run test:ui
