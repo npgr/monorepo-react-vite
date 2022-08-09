@@ -16,15 +16,15 @@ jobs:
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v3
 
-      - name: ⎔ Setup node
+      - name: ⎔ Install Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 16
 
-      - name: 📥 Download deps
-        uses: bahmutov/npm-install@v1
+      - name: ⎔ install pnpm
+        uses: pnpm/action-setup@v2.2.2
         with:
-          useLockFile: false
+          version: 7
 
       - name: ⚡ Run test:ui (Vitest)
         run: npm run test:ui
