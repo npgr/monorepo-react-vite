@@ -26,7 +26,6 @@ jobs:
         with:
           version: 7
 
-      # - name: 🛠 Config pnpm
       - name: 📥 Install dependencies
         run: pnpm config set auto-install-peers true && pnpm install
 

@@ -1,3 +1,5 @@
+[![Tests](https://github.com/npgr/monorepo-react-vite/actions/workflows/tests.yml/badge.svg)](https://github.com/npgr/monorepo-react-vite/actions/workflows/tests.yml)
+
 ## Stack
 
 - pnpm (workspace - monorepo)
