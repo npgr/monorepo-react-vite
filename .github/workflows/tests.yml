@@ -21,10 +21,16 @@ jobs:
         with:
           node-version: 16
 
-      - name: ⎔ install pnpm
+      - name: ⎔ Install pnpm
         uses: pnpm/action-setup@v2.2.2
         with:
           version: 7
+
+      - name: 🛠 Config pnpm
+        run: pnpm config set auto-install-peers true
+
+      - name: 📥 Install dependencies
+        run: pnpm install
 
       - name: ⚡ Run test:ui (Vitest)
         run: npm run test:ui
