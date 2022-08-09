@@ -1,0 +1,30 @@
+name: 🚀 Tests
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  vitest:
+    name: ⚡ Test UI lib
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🛑 Cancel Previous Runs
+        uses: styfle/cancel-workflow-action@0.9.1
+
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@v3
+
+      - name: ⎔ Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: 📥 Download deps
+        uses: bahmutov/npm-install@v1
+        with:
+          useLockFile: false
+
+      - name: ⚡ Run test:ui (Vitest)
+        run: npm run test:ui
