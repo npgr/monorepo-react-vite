@@ -16,21 +16,23 @@ jobs:
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v3
 
-      - name: ⎔ Install Node.js
+      - name: 📦 Install Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 16
 
-      - name: ⎔ Install pnpm
+      - name: ✨ Install pnpm
         uses: pnpm/action-setup@v2.2.2
         with:
           version: 7
 
-      - name: 🛠 Config pnpm
-        run: pnpm config set auto-install-peers true
-
+      # - name: 🛠 Config pnpm
       - name: 📥 Install dependencies
+        run: pnpm config set auto-install-peers true
         run: pnpm install
 
-      - name: ⚡ Run test:ui (Vitest)
-        run: npm run test:ui
+      - name: 🐙 Run test:ui (Vitest)
+        run: pnpm run test:ui
+
+      - name: ✅ Run cypress:ui (Cypress components)
+        run: pnpm run cypress:ui
