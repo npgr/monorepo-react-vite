@@ -1,4 +1,4 @@
-name: 🚀 Tests
+name: 🚀 Test & Build
 on:
   push:
     branches:
@@ -34,3 +34,55 @@ jobs:
 
       - name: ✅ Run cypress:ui (Cypress components)
         run: pnpm run cypress:ui
+
+  build_ui:
+    name: 🏎  Build UI library
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🛑 Cancel Previous Runs
+        uses: styfle/cancel-workflow-action@0.9.1
+
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@v3
+
+      - name: 📦 Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: ✨ Install pnpm
+        uses: pnpm/action-setup@v2.2.2
+        with:
+          version: 7
+
+      - name: 📥 Install dependencies
+        run: pnpm config set auto-install-peers true && pnpm install
+
+      - name: 🏎 Build UI library
+        run: pnpm build:ui
+
+  # build_sb_ui:
+  #   name: 📊 Build UI Storybook
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: 🛑 Cancel Previous Runs
+  #       uses: styfle/cancel-workflow-action@0.9.1
+
+  #     - name: ⬇️ Checkout repo
+  #       uses: actions/checkout@v3
+
+  #     - name: 📦 Install Node.js
+  #       uses: actions/setup-node@v3
+  #       with:
+  #         node-version: 16
+
+  #     - name: ✨ Install pnpm
+  #       uses: pnpm/action-setup@v2.2.2
+  #       with:
+  #         version: 7
+
+  #     - name: 📥 Install dependencies
+  #       run: pnpm config set auto-install-peers true && pnpm install
+
+  #     - name: 📊 Build UI Storybook
+  #       run: pnpm build:sb:ui
