@@ -1,6 +1,10 @@
 [![Tests](https://github.com/npgr/monorepo-react-vite/actions/workflows/tests.yml/badge.svg)](https://github.com/npgr/monorepo-react-vite/actions/workflows/tests.yml)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1b50b6e4-7a4e-4cd9-9751-317745c38672/deploy-status)](https://app.netlify.com/sites/sb-ui/deploys)
+
 ## Stack
+
+[Storybook UI lib in Netlify](https://sb-ui.netlify.app/)
 
 - pnpm (workspace - monorepo)
 - React 18
