@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prebuild": "test \"$CI\" = true && npx pnpm install -r --store=node_modules/.pnpm-store || echo skipping pnpm install",
     "preinstall": "npx only-allow pnpm",
     "start:app": "pnpm --filter vite-react dev --host",
     "build:ui": "pnpm --filter ui-lib build",
-    "build:sb:ui": "pnpm --filter ui-lib build:sb",
+    "build:sb-ui": "pnpm --filter ui-lib build:sb",
     "sb:ui": "pnpm --filter ui-lib sb",
     "test:ui": "pnpm --filter ui-lib coverage",
     "cypress:ui": "pnpm --filter ui-lib cypress:run",
