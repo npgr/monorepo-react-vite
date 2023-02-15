@@ -1,0 +1,17 @@
+[
+  {
+    "avatar": "",
+    "collectionId": "_pb_users_auth_",
+    "collectionName": "users",
+    "created": "2023-02-08 22:42:53.794Z",
+    "email": "",
+    "emailVisibility": false,
+    "id": "hmj1ftx6q0s5dw3",
+    "name": "John Doe",
+    "profile": "sales",
+    "updated": "2023-02-09 00:55:38.760Z",
+    "username": "user1",
+    "verified": true,
+    "expand": {}
+  }
+]

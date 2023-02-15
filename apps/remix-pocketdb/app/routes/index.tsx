@@ -11,10 +11,6 @@ export async function loader() {
 export default function Index() {
   const { data, user, userModel } = useLoaderData<typeof loader>();
 
-  // console.log('data: ', data);
-  // console.log('userData: ', user);
-  // console.log('userModel: ', userModel);
-
   const { items, totalItems } = data as { items: TaskResponse[]; totalItems: number };
 
   return (

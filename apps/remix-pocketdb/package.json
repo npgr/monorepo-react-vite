@@ -9,12 +9,15 @@
     "start": "remix-serve build",
     "db": "./data/pocketbase serve",
     "typecheck": "tsc",
-    "typegen": "pnpx pocketbase-typegen --db ./data/pb_data/data.db --out ./app/models/pocketbase-types.ts"
+    "typegen": "pnpx pocketbase-typegen --db ./data/pb_data/data.db --out ./app/models/pocketbase-types.ts",
+    "export": "node ./scripts/export.js"
   },
   "dependencies": {
     "@remix-run/node": "^1.12.0",
     "@remix-run/react": "^1.12.0",
     "@remix-run/serve": "^1.12.0",
+    "cross-fetch": "^3.1.5",
+    "dotenv": "^16.0.3",
     "isbot": "^3.6.5",
     "pocketbase": "^0.10.1",
     "react": "^18.2.0",
